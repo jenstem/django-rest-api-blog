@@ -47,7 +47,7 @@ THEN I exit the app by closing the browser
 There is no need to install anything, please use the link to the deployed app.\
 [Django Rest API Blog](https://django-rest-api-blog-b09621d0.zvgz4d.on-acorn.io/blogposts/)
 
-*App is deployed using Acorn, which will NOT continuously deploy the app*
+*App is deployed using Acorn, which will NOT continuously deploy the app*\
 *Please see GIF below if app is not currently deployed*
 ##
 
