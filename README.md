@@ -73,4 +73,4 @@ GitHub URL:  https://github.com/jenstem
 <a id='notes'></a>
 ## Notes:
 
-I received help from the tutorial, [Tech with Time](https://www.youtube.com/watch?v=t-uAgI-AUxc).
+I received help from the tutorial, [Tech with Tim](https://www.youtube.com/watch?v=t-uAgI-AUxc).
