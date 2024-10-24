@@ -6,20 +6,35 @@ from .serializers import BlogPostSerializer
 from rest_framework.views import APIView
 
 class BlogPostListCreate(generics.ListCreateAPIView):
+    """
+    API view to retrieve and create blog posts.
+    """
     queryset = BlogPost.objects.all()
     serializer_class = BlogPostSerializer
 
     def delete(self, request, *args, **kwargs):
+        """
+        Delete all blog posts.
+        """
         BlogPost.objects.all().delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 class BlogPostRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
+    """
+    API view to retrieve, update or delete blog post.
+    """
     queryset = BlogPost.objects.all()
     serializer_class = BlogPostSerializer
     lookup_field = "pk"
 
 class BlogPostList(APIView):
+    """
+    API view to list blog posts, optionally filtered by title.
+    """
     def get(self, request, format=None):
+        """
+        Retrieve a list of blog posts, optionally filtered by title.
+        """
         title = request.query_params.get("title", "")
 
         if title:
